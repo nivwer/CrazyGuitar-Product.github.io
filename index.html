@@ -5,60 +5,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>CrazyGuitar-Product</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0ad893f986.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
             <header id="header">
                 <div>
-                    <img id="header-img" src="">
+                    <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/43/43852.png?w=826&t=st=1666033742~exp=1666034342~hmac=1020cd73554b26bb750d74050bb2519e7f01f3ad72f15886ac61307a335cf6d4">
                     <h1>Crazy Guitar</h1>
                 </div>
+
+                <label class="header-label" for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input class="header-input" id="menu" type="checkbox">
+
                 <nav id="nav-bar">
                     <ul>
                         <li class="nav-link"><a href="#section-features">Features</a></li>
                         <li class="nav-link"><a href="#section-pricing">Pricing</a></li>
-                        <li class="nav-link"><a href="#section-form">Contact Us</a></li>
+                        <li class="nav-link"><a href="#section-form">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <section id="section-form">
-                <h2>The instrument with the most lovers and cultivators in the history of mankind.</h2>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input id="email" type="email" name="email" placeholder="Enter your email address" required>
-                    <input id="submit" type="submit" value="Get Started" class="form-submit">
-                </form>
+                <div class="div-form">
+                    <h2><span class="the-instrument">The instrument</span> with the most <span class="lovers">lovers</span> and cultivators in the history of mankind</h2>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+                        <input id="submit" type="submit" value="Get Started" class="form-submit">
+                    </form>
+                </div>
+                <div class="div-img">
+                    <img id="image" src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+                </div>
             </section>
             <section id="section-features">
                 <div class="features-div">
-                    <div class="icon"><i class=""></i></div>
-                    <div class="desc">
-                        <h3>Custom designs</h3>
-                        <p>
-                          We make the designs as crazy as your mind can imagine. We will 
-                          send you a preview before making it real.
-                        </p>
+                    <div class="features-div__div">
+                        <div class="icon"><i class=""></i></div>
+                        <div class="desc">
+                            <h3>Custom designs</h3>
+                            <p>
+                              We make the designs as crazy as your mind can imagine. We will 
+                              send you a preview before making it real.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="features-div">
-                    <div class="icon"><i class=""></i></div>
-                    <div class="desc">
-                        <h3>Quality Assurance</h3>
-                        <p>
-                          For every purchase you make, we will ensure there are no damages
-                          or faults and we will check and test the pitch of your
-                          instrument.
-                        </p>
+                    <div class="features-div__div">
+                        <div class="icon"><i class=""></i></div>
+                        <div class="desc">
+                            <h3>Quality Assurance</h3>
+                            <p>
+                              For every purchase you make, we will ensure there are no damages
+                              or faults and we will check and test the pitch of your
+                              instrument.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="features-div">
-                    <div class="icon"><i class=""></i></div>
-                    <div class="desc">
-                        <h3>Fast Shipping</h3>
-                        <p>
-                          We make sure you recieve your trombone as soon as we have
-                          finished making it. We also provide free returns if you are not
-                          satisfied.
-                        </p>
+                    <div class="features-div__div">
+                        <div class="icon"><i class=""></i></div>
+                        <div class="desc">
+                            <h3>Fast Shipping</h3>
+                            <p>
+                              We make sure you recieve your trombone as soon as we have
+                              finished making it. We also provide free returns if you are not
+                              satisfied.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -68,7 +86,7 @@
             </section>
             <section id="section-pricing">
                 <div class="product" id="classic-guitar">
-                    <div class="">Classic Guitar</div>
+                    <div class="class">Classic Guitar</div>
                     <h3>$32000</h3>
                     <ol>
                         <li>Lorem ipsum.</li>
@@ -79,9 +97,9 @@
                     <button class="btn">Select</button>
                 </div>
                 <div class="product" id="acoustic-guitar">
-                    <div class="">Acoustic guitar</div>
+                    <div class="class">Acoustic guitar</div>
                     <h3>$32000</h3>
-                    <ol>l
+                    <ol>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum.</li>
                         <li>Lorem ipsum dolor.</li>
@@ -90,7 +108,7 @@
                     <button class="btn">Select</button>
                 </div>
                 <div class="product" id="electric-guitar">
-                    <div class="">Electric Guitar</div>
+                    <div class="class">Electric Guitar</div>
                     <h3>$32000</h3>
                     <ol>
                         <li>Lorem ipsum.</li>
@@ -102,12 +120,13 @@
                 </div>
             </section>
             <footer id="footer">
-              <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-              <span>Copyright 2022, Crazy Guitar</span>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span>Copyright 2022, Crazy Guitar</span>
+                <span>Guitar icons created by Freepik - Flaticon</span>
             </footer>
         </div>
     </body>
