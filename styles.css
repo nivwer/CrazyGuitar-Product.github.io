@@ -269,6 +269,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #246e6b; 
 }
 
 #section-features .fa-solid {
@@ -284,6 +285,8 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     padding: 5px;
+    color: linear-gradient(#ffffff, #2f8e89);
+
 }
 
 #section-features h3 {
@@ -320,6 +323,7 @@ iframe {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 100px 0;
 }
 
 #section-pricing .product {
@@ -330,19 +334,41 @@ iframe {
     max-width: 300px;
     width: 100%;
     margin: 10px;
-    background-color: #b06286;
+    border: 1px solid #246e6b;
+    border-radius: 3px;
 }
 
 #section-pricing .class {
-    background-color: #ddd;
-    color: black;
     padding: 15px 0;
     width: 100%;
+    font-size: 1.25em;
+    background-color: #151b1d;
+    margin-bottom: 1em;
 }
+
+#section-pricing ol {
+    list-style: none;
+}
+
+#section-pricing ol li {
+    margin: 0.5em;
+}
+
+#section-pricing .btn {
+    font-size: 1.3em;
+    padding: 8px 22px;
+    margin: 1.3em auto;
+    color:#fff;
+    background: #246e6b;
+    border: none;
+    border-radius: 30px;
+}
+
+/* footer */
 
 
 #footer {
-    background-color: #7a4cba;
+    background-color: #050505;
     display: grid;
 }
 
