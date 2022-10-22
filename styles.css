@@ -19,8 +19,8 @@ html {
 /* Small Screen */
 
 body {
-    background-color: #cccccc;
-    color: #090d0e;
+    background-color: #050505fb;
+    color: #cdcdcd;
     font-family: 'Source Code Pro', monospace;
     font-size: 10px;
     overflow-x: hidden;
@@ -123,7 +123,7 @@ body::-webkit-scrollbar-thumb {
 
 #nav-bar ul {
     list-style: none;
-    margin: 52px 0;
+    margin: 72px 0;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
@@ -173,7 +173,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .div-form h2 .lovers {
-    color: #41dbd1;   
+    color: #2f8e89;   
 }
 
 
@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0 15px;
     margin: 0 auto;
     color:#fff;
-    background: #2f8e89;
+    background: #246e6b;
     border: none;
     border-radius: 50px;
 }
@@ -209,12 +209,13 @@ body::-webkit-scrollbar-thumb {
 .div-img::before {
     content: "";
     width: 100%;
-    height: 102vh;
+    height: 101vh;
     position: absolute;
     top: 0;
     right: 0;
-    background-image: linear-gradient(350deg, #ffffff00 25%, #000000c1 99%),
-    linear-gradient(175deg, #ffffff00 10%, #0000008c 96%);
+  /*  linear-gradient(350deg, #05050500 30%, #050505c1 70%), */
+    background-image: linear-gradient(350deg, #ffffff00 35%, #000000c6 80%),
+     linear-gradient(175deg,#ffffff00 50%, #000000ff 90%);
 }
 
 #image {
@@ -228,37 +229,56 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* Section (Features) */
+/* Section (Features and Video) */
+
+.div-fv {
+    background-color: #000000;
+    height: 100%;
+    width: 100vw;
+    padding: 100px 0;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap: 30px;    
+}
 
 
 #section-features {
-    width: 100vw;
+    margin: auto;
+    width: 95%;
     height: 100%;
-    background-color: antiquewhite;
+    max-width: 800px;
+    max-height: 450px;
+    min-height: 300px;
 }
 
 .features-div {
-    margin: auto;
-    max-width: 800px;
-    width: 100vw;
+    height: 100%;
     display: grid;
-    background-color: rgb(94, 127, 33);
 }
 
 .features-div__div {
+    height: 100%;
     display: flex;
 }
 
 #section-features .icon {
     width: 20vw;
-    height: 100px;
+    max-width: 200px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#section-features .fa-solid {
+    font-weight: 900;
+}
+
+
 #section-features .desc {
-    height: 100px;
+    font-size: 1em;
+    height: 9em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -266,19 +286,33 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 
+#section-features h3 {
+    font-size: 1.5em;
+}
 
-/* Section (Video) */
+#section-features p {
+    padding: 0.7em;
+}
+
 
 #section-video {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    width: 95%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    max-width: 800px;
+    max-height: 450px;
 }
 
-#video {
-    max-width: 560px;
+iframe {
+    position: absolute;
+    height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
 }
-
 
 /* Section (Pricing) */
 
@@ -465,7 +499,37 @@ body::-webkit-scrollbar-thumb {
         margin: 0 10px;
 
     }
+}
 
+
+@media (min-width: 1400px) {
+
+
+    .div-fv {
+        height: 100%;
+        width: 100vw;
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #section-features {
+        width: 45vw;
+        height: 100%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    #section-video {
+        width: 45vw;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
