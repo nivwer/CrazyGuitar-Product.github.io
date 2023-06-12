@@ -1,19 +1,20 @@
 :root {
-    --color-letter: #cdcdcd;
+    --color-letter: #c2c2c2;
     --color-background: #000000;
     --color-nav: #000000;
     --color-nav-menu: #050505f7;
-    --color-primary1: #489b96;
-    --color-primary2: #246e6b;
-    --color-gray1: #151b1d;
-    --color-gray2: #252727c8;
-    --color-gray3: #616565c8;
+    --color-primary1: #616161;
+    --color-primary2: #2b2b2b;
+    --color-gray1: #181818;
+    --color-gray2: #121212c8;
+    --color-gray3: #646464c8;
   }
   
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'New Rocker', cursive;
   }
   
   html {
@@ -23,7 +24,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-letter);
-    font-family: monospace;
+    font-family: 'New Rocker', cursive;
     font-size: 10px;
     overflow-x: hidden;
   }
@@ -80,7 +81,7 @@
     font-size: 32px;
     padding: auto;
     margin: auto 0;
-    font-family: 'Inspiration', cursive;
+    font-family: 'New Rocker', cursive;
     z-index: 60;
   }
   
@@ -164,6 +165,7 @@
     transform: translate(-50%, -50%);
     display: grid;
     z-index: 30;
+    text-align: center;
 }
 
 .div-form h2 {
@@ -173,7 +175,7 @@
 }
 
 .div-form h2 .the-instrument {
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .div-form h2 .lovers {
@@ -194,7 +196,7 @@
     outline: 1px solid var(--color-gray1);
     background-color: var(--color-gray2);
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     border-bottom: 2px solid var(--color-gray1);
     transition: 0.3s;
 }
@@ -212,7 +214,7 @@
     color: var(--color-letter);
     background: var(--color-primary2);
     border: none;
-    border-radius: 50px;
+    border-radius: 1px;
     transition: 0.3s;
 }
 
@@ -229,7 +231,7 @@
     top: 0;
     right: 0;
     background-image: linear-gradient(350deg, #ffffff00 35%, #000000c6 80%),
-        linear-gradient(175deg, #ffffff00 50%, #000000ff 90%);
+        linear-gradient(180deg, #ffffff00 50%, #000000ff 90%);
 }
 
 #image {
@@ -340,7 +342,7 @@ iframe {
     width: 100%;
     margin: 10px;
     border: 1px solid var(--color-gray1);
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 #section-pricing .class {
@@ -366,7 +368,7 @@ iframe {
     color: var(--color-letter);
     background: var(--color-primary2);
     border: none;
-    border-radius: 30px;
+    border-radius: 1px;
     transition: 0.3s;
 }
 
@@ -425,7 +427,7 @@ iframe {
     }
 
     .div-form h2 .the-instrument {
-        font-size: 36px;
+        font-size: 43px;
     }
 }
 
@@ -440,7 +442,7 @@ iframe {
     }
 
     .div-form h2 .the-instrument {
-        font-size: 50px;
+        font-size: 60px;
     }
 }
 
@@ -471,7 +473,7 @@ iframe {
     }
 
     #header h1 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .header-input,
@@ -510,10 +512,9 @@ iframe {
 
     /* Section (Form) */
     .div-form {
-        top: 20%;
-        left: 5%;
-        transform: translate(0, 0);
-        text-align: start;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50, -50);
     }
 
     .div-form h2 {
@@ -522,17 +523,17 @@ iframe {
     }
 
     .div-form h2 .the-instrument {
-        font-size: 80px;
+        font-size: 98px;
     }
 
     #email {
         width: 200px;
-        margin: 0 10px;
+        margin: 0 auto;
     }
 
     #submit {
         width: 180px;
-        margin: 0 10px;
+        margin: 0 auto;
     }
 }
 
