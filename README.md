@@ -21,6 +21,5 @@
   <img src="ss/screen-667x375.png" width="300">
 </p>
 
-
 <h1></h1>
 <p align="center">It's just a practice.</p>
